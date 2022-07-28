@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a3403921f8.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container--flex">
+        <section class="list">
+            <h1 class="list__title">Todo List</h1>
+            <label class="list__label">Nueva tarea</label>
+            <div class="container__input">
+                <input type="text" class="list__input" id="input">
+                <button class="list__button" id="button">Agregar</button>
+            </div>
+            <div class="list__box">
+                <div class="container__total">
+                    <span id="total">Total: 0</span>
+                    <span id="realizadas">Realizadas: 0</span>
+                </div>
+                <div class="container__list">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tarea</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tareas">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
